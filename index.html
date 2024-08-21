@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Sten, Saks, Papir</title>
+    
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="bg-success text-light">
+
+<div class="container">
+    
+    <h1 class="text-center my-5">Sten, Saks, Papir!</h1>
+    
+    <div class="scoreboard my-5">
+        <h3 class="text-center" id="scoreInfo">Choose your weapon</h3>
+        
+        <div class="row row-cols-auto justify-content-center">
+            <div class="text-center">
+                <div class="sign" id="playerSign">❔</div>
+                <p id="playerScoreDisplay" class="fs-4">Player: 0</p>
+            </div>
+            <div class="text-center">
+                <div class="sign" id="computerSign">❔</div>
+                <p id="computerScoreDisplay" class="fs-4">Computer: 0</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row row-cols-auto justify-content-center gx-3">
+        <div>
+            <button class="btn bg-success-subtle sign" id="rockBtn">✊</button>
+        </div>
+        <div>
+            <button class="btn bg-success-subtle sign" id="scissorsBtn">✌</button>
+        </div>
+        <div>
+            <button class="btn bg-success-subtle sign" id="paperBtn">✋</button>
+        </div>
+    </div>
+</div>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const scoreInfo = document.querySelector('#scoreInfo');
+    const playerScoreDisplay = document.querySelector('#playerScoreDisplay');
+    const computerScoreDisplay = document.querySelector('#computerScoreDisplay');
+    const playerSign = document.querySelector('#playerSign');
+    const computerSign = document.querySelector('#computerSign');
+    const rockBtn = document.querySelector('#rockBtn');
+    const paperBtn = document.querySelector('#paperBtn');
+    const scissorsBtn = document.querySelector('#scissorsBtn');
+    let playerScore = 0;
+    let computerScore = 0;
+    let roundWinner = '';
+    
+    
+</script>
+</body>
+</html>
